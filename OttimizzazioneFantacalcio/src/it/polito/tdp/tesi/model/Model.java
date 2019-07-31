@@ -65,6 +65,14 @@ public class Model {
 		media.addAll(dao.getMediaSolo20182019());
 		media.addAll(dao.getMediaTreAnni());
 							
+		for(CalciatoreStatistiche c: this.media) {
+			for(Quotazione q: this.quotazioni) {
+				if(q.getId()==c.getId()) {
+					c.setRuolo(q.getRuolo());
+					c.setSquadra(q.getSquadra());
+				}
+			}
+		}
 	}
 	
 	public List<CalciatoreStatistiche> getMedia(){
@@ -100,6 +108,14 @@ public class Model {
 				}
 			}
 			
+		}
+		for(PunteggioCalciatore c: this.punteggi) {
+			for(Quotazione q: this.quotazioni) {
+				if(q.getId()==c.getId()) {
+					c.setRuolo(q.getRuolo());
+					c.setSquadra(q.getSquadra());
+				}
+			}
 		}
 		
 	}
@@ -156,7 +172,7 @@ public class Model {
 					String squadra = parziale.get(0).getSquadra();
 					for(PunteggioCalciatore c:this.punt) {
 						if(!parziale.contains(c)) {
-							if(c.getSquadra().equals(squadra) &&c.getRuolo().equals("P")&&c.getQuotazione()+(i-parziale.size()-1)<=budget) {
+							if(c.getSquadra().equals(squadra) &&c.getRuolo().equals("P")&&c.getQuotazione()+(i-parziale.size()-1)<=budget && parziale.size()<i) {
 								parziale.add(c);
 								ricorsione(parziale,i,ruolo,budget-c.getQuotazione());
 							}
@@ -269,6 +285,14 @@ public class Model {
 
 	public List<CalciatoreStatistiche> getSquadra(String ruolo) {
 
+		for(CalciatoreStatistiche c: this.nomeCalciatori) {
+			for(Quotazione q: this.quotazioni) {
+				if(q.getId()==c.getId()) {
+					c.setRuolo(q.getRuolo());
+					c.setSquadra(q.getSquadra());
+				}
+			}
+		}
 			
 		List<PunteggioCalciatore> punt = new ArrayList<PunteggioCalciatore>();
 		for(PunteggioCalciatore s: this.getListaPunteggi()) {

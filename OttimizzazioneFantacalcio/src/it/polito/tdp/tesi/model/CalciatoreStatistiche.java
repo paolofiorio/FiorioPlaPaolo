@@ -117,6 +117,13 @@ public class CalciatoreStatistiche {
 	public double getAutogol() {
 		return autogol;
 	}
+	
+	public void setRuolo(String ruolo) {
+		this.ruolo = ruolo;
+	}
+	public void setSquadra(String squadra) {
+		this.squadra = squadra;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;

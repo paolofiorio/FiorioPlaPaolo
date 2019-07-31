@@ -462,8 +462,8 @@ public class RosaController {
         assert btnGeneraAttaccanti != null : "fx:id=\"btnGeneraAttaccanti\" was not injected: check your FXML file 'Rosa.fxml'.";
         
 
-        cmbPortieri.getItems().addAll("Squadra","Media voto decrescente","FantaMedia decrescente", "Minor media reti subite a partita","Quotazione decrescente", "Punteggio decrescente"
-        		,"Rigori parati");
+        cmbPortieri.getItems().addAll("Squadra","Media voto decrescente","FantaMedia decrescente","Quotazione decrescente", "Punteggio decrescente", "Minor media reti subite a partita",
+        		"Rigori parati");
         cmbDifensori.getItems().addAll("Squadra","Media voto decrescente","FantaMedia decrescente", "Quotazione decrescente", "Punteggio decrescente","Goleador", "Assistman", "Più cartellini", "Rigoristi");
         cmbCentrocampisti.getItems().addAll("Squadra","Media voto decrescente","FantaMedia decrescente", "Quotazione decrescente", "Punteggio decrescente","Goleador", "Assistman", "Più cartellini", "Rigoristi");
         cmbAttaccanti.getItems().addAll("Squadra","Media voto decrescente","FantaMedia decrescente", "Quotazione decrescente", "Punteggio decrescente","Goleador", "Assistman", "Più cartellini", "Rigoristi");
