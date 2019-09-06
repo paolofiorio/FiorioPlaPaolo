@@ -5,7 +5,7 @@ L'applicazione si propone di fornire all'utente la miglior rosa possibile per il
 
 Istruzioni per l'installazione e l'utilizzo dell' applicazione:
  
- -  Forkare e clonare o scaricare il progetto presente all'indirizzo: https://github.com/TdP-prove-finali/FiorioPlaPaolo
+ -  Forkare e clonare o scaricare il progetto presente all'indirizzo: https://github.com/paolofiorio/FiorioPlaPaolo
 
  -  Importare sul proprio server locale il database dell'applicazione presente all'interno della cartella "db" del progetto.
 
