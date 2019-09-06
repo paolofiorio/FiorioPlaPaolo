@@ -27,6 +27,11 @@ public class CalciatoreStatistiche {
 	private double espulsioni;
 	private double autogol;
 	
+	private double retiTotali;
+	private double assistTotali;
+	private double cartelliniTotali;
+	private double mediaRetiSubite;
+	
 	public CalciatoreStatistiche(int id, String ruolo, String nome, String squadra, int quotazione,
 			double partiteGiocate, double mediaVoto, double mediaFanta, double golFatti, double golSubiti,
 			double rigoriParati, double rigoriCalciati, double rigoriSegnati, double rigoriSbagliati, double assist,
@@ -51,6 +56,7 @@ public class CalciatoreStatistiche {
 		this.ammonizioni = ammonizioni;
 		this.espulsioni = espulsioni;
 		this.autogol = autogol;
+		
 	}
 	public int getId() {
 		return id;
@@ -116,6 +122,18 @@ public class CalciatoreStatistiche {
 	}
 	public double getAutogol() {
 		return autogol;
+	}
+	public double getRetiTotali() {
+		return golFatti+rigoriSegnati;
+	}
+	public double getAssistTotali() {
+		return assist+assistFermo;
+	}
+	public double getCartelliniTotali() {
+		return ammonizioni+espulsioni;
+	}
+	public double getMediaRetiSubite() {
+		return golSubiti/partiteGiocate;
 	}
 	
 	public void setRuolo(String ruolo) {

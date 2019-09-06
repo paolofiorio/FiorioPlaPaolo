@@ -134,7 +134,7 @@ public class HomeController {
  			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			s.setScene(scene);
 			s.setTitle("Costruisci la tua rosa");
-			s.setX(+565.00);
+			s.setX(+552.00);
 			s.setY(20.00);
 			s.show();
     		}

@@ -449,7 +449,8 @@ public class Model {
 				@Override
 				public int compare(CalciatoreStatistiche o1, CalciatoreStatistiche o2) {
 					// TODO Auto-generated method stub
-					return -Double.compare(o1.getGolFatti()+o1.getRigoriSegnati(),o2.getGolFatti()+o2.getRigoriSegnati());
+					return -Double.compare(o1.getRetiTotali(),o2.getRetiTotali());
+					
 					}
 				
 		});	
@@ -468,7 +469,7 @@ public class Model {
 				@Override
 				public int compare(CalciatoreStatistiche o1, CalciatoreStatistiche o2) {
 					// TODO Auto-generated method stub
-					return -Double.compare(o1.getAssist(),o2.getAssist());
+					return -Double.compare(o1.getAssistTotali(),o2.getAssistTotali());
 					}
 				
 		});
@@ -488,7 +489,7 @@ public class Model {
 				@Override
 				public int compare(CalciatoreStatistiche o1, CalciatoreStatistiche o2) {
 					// TODO Auto-generated method stub
-					return -Double.compare((o1.getAmmonizioni()+o1.getEspulsioni()),(o2.getAmmonizioni()+o2.getEspulsioni()));
+					return -Double.compare(o1.getCartelliniTotali(),o2.getCartelliniTotali());
 					}
 				
 		});

@@ -23,15 +23,16 @@
    <bottom>
       <HBox spacing="5.0" BorderPane.alignment="CENTER">
          <children>
-            <TableView fx:id="tabellaCaratteristiche" maxHeight="397.0" minHeight="397.0" minWidth="300.0" prefHeight="200.0" prefWidth="200.0">
+            <TableView fx:id="tabellaCaratteristiche" maxHeight="397.0" minHeight="397.0" minWidth="300.0" prefHeight="397.0" prefWidth="336.0">
               <columns>
-                <TableColumn fx:id="colNomeCaratt" prefWidth="130.0" text="Nome" />
-                  <TableColumn fx:id="colRuoloCaratt" prefWidth="40.0" text="Ruolo" />
-                <TableColumn fx:id="colSquadraCaratt" text="Squadra" />
-                  <TableColumn fx:id="colQuotaCaratt" prefWidth="48.0" text="Quota" />
+                <TableColumn fx:id="colNomeCaratt" prefWidth="105.0" text="Nome" />
+                  <TableColumn fx:id="colRuoloCaratt" prefWidth="42.0" text="Ruolo" />
+                <TableColumn fx:id="colSquadraCaratt" prefWidth="76.0" text="Squadra" />
+                  <TableColumn fx:id="colQuotaCaratt" prefWidth="61.0" text="Quota" />
+                  <TableColumn fx:id="colCaratt" prefWidth="40.0" visible="false" />
               </columns>
             </TableView>
-            <VBox>
+            <VBox prefHeight="397.0" prefWidth="159.0">
                <children>
                   <HBox>
                      <children>
